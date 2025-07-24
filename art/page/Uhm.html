@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uhm</title>
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <link rel="icon" href="/assets/favicons/plantpainting.gif">
+    <link href="/art/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <div id="title">
+                <div class="title-text"><a href="/art/index.html">↑ Back</a></div>
+                <div class="title-nav"><a href="sunday.html">← Prev</a> · <a href="page/">Next →</a></div>
+            </div>
+        </header>
+
+        <hr>
+
+        <div id="page">
+            <div class="img-container">
+                <a href="/art/media/kimdokjasmile.png"><img src="/art/media/kimdokjasmile.png"></a>
+            </div>
+
+            <div class="caption">
+                <hr class="page-divider">
+                <b>Uhm!</b>
+                <br> torsos. You agree! Nods.
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

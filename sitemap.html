@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sitemap</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .container {
+            width: 80%;
+            min-height: 30rem;
+            border: 1rem solid transparent;
+            border-image: url(/assets/bgs/border_lace_fancy_white.png) 20 round;
+            background-image: url(/assets/bgs/bgtile_bluestripes.gif);
+            background-clip: content-box;
+            overflow-x: hidden;
+        }
+        
+        header {
+            height: 20%;
+            position: relative;
+            background-image: url(/assets/dither_it_goofyheader.png);
+            background-size: cover;
+            border-width: 2px 2px 0px 2px;
+            border-style: ridge;
+            border-color: skyblue;
+            overflow: hidden;
+            z-index: 2;
+        }
+        
+        .marqueebox {
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+            padding: 3px;
+        }
+        
+        .lowercont {
+            display: flex;
+            min-height: 40rem;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 1rem;
+            gap: 16px;
+        }
+        
+        #meow {
+            min-height: 10rem;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 fill round;
+        }
+        
+        #meow ul {
+            border-left: #5e5e5e 1px solid;
+            margin-right: 0;
+            padding-right: 0;
+            padding-bottom: 10px;
+        }
+        
+        #meow li {
+            list-style-type: "---→";
+            margin: 3px 0px 3px 2.2rem;
+        }
+        
+        #meow li p {
+            margin: 0 0 0 1rem;
+            font-size: smaller;
+        }
+        
+        #meow ul ul li {
+            list-style-type: "---→";
+            margin: 3px 0px 0px 2.2rem;
+        }
+        
+        #meow ul ul {
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1></h1>
+        </header>
+        <div class="marqueebox">
+            <marquee><span style="color: red;">Did you know? I like chinese chili shrimp (shell on, of course) with roasted garlic over rice, especially the juices in the heads</span></marquee>
+        </div>
+        <div class="lowercont">
+            <div class="sidenav">
+                <ul>
+                    <li>
+                        <span class="sidenav_sections"><b>Sitely:</b>──────╮</span>
+                    </li>
+                    <li>
+                        <a href="index.html">Homepage</a><span style="font-size: 75%; color: crimson"><i> up!</i></span>
+                    </li>
+                    <li><a href="abtme.html">About Me</a></li>
+                    <li><a href="sitemap.html">Sitemap</a> <span style="font-size: 70%">◄ You are here!</span></span>
+                    </li>
+                    <li><a href="credits.html">Credits</a></li>
+                    <li>
+                        <span class="sidenav_sections"><b>Blogs:</b>──────╮</span>
+                    </li>
+                    <li>
+                        <a href="blog.html">Diary</a>
+                        <span style="font-size: 75%; color: crimson"><i>up!</i></span>
+                    </li>
+                    <li><a href="imageblog.html">Image Blog</a></li>
+                    <li>
+                        <span class="sidenav_sections"><b>Showcase:</b>────╮</span>
+                    </li>
+                    <li><a href="art/index.html">Art</a></li>
+                    <li><a href="learning_plan/exhibition.html">Exhibition</a></li>
+                    <li>
+                        <span class="sidenav_sections"><b>Silly Things:</b>───╮</span>
+                    </li>
+                    <li>
+                        <a href="https://nik0la1.atabook.org/" target="_blank">Guestbook</a>
+                    </li>
+                </ul>
+
+                <a href="https://www.acbjd.com/xiao-chu-fullset-p-20014.html?cPath=327_328" target="_blank"><img src="/assets/deco/bannerad_dollzone_xiaochu_sale_pixeled.jpg" style="display: block; width: 95%; margin-left: auto; margin-right: auto; margin-top: 5px;" alt="please buy me this doll i'm begging you im so broke"></a>
+            </div>
+            <div class="content">
+                <div id="meow">
+                    <p>Sorry if my site is un-navigatable. It will only get worse with time. (*^_^*) Hopefully this helps. If it doesn't... I don't know. Good luck. </p>
+                    <ul>
+                        <li><a href="index.html">Homepage</a>
+                            <p>
+                                Exactly what you think it is. <a href="https://status.cafe/users/nik0la1">Microblog,</a> updates, button, and to-do are all here.
+                            </p>
+                        </li>
+                        <li><a href="abtme.html">About Me [嘉敏 (Disambiguation)]</a>
+                            <p>
+                                <span style="color: red;">WORK IN PROGRESS</span> bio, currently working on, quiz results, etc. are here. Actually contains little writing about me, to truely know me you have to stalk through my site like Mr. Fool intended.
+                            </p>
+                        </li>
+                        <li><a href="sitemap.html">Sitemap</a>
+                            <p>You are here! One (1) fun fact about how I like my shrimp also lives here</p>
+                        </li>
+                        <li><a href="LINKHERE">Credits</a>
+                            <p>
+                                <span style="color: red;">WORK IN PROGRESS</span> Pretty much what you think it is. Places I've gotten assets/inspiration from, and buttons of sites I think are cool/have inspired me
+                            </p>
+                        </li>
+                        <li><a href="blog.html">Diary</a>
+                            <p>
+                                Privacy through obscurity, am I right? ^^ (I am wrong) Entries of my life when I feel like writing them.
+                            </p>
+                        </li>
+                        <li><s><a href="LINKHERE">Image Blog</a></s>
+                            <p>
+                                <span style="color: red;">TO BE MADE</span> Photo entries of my life when I feel like uploading them
+                            </p>
+                        </li>
+                        <li><a href="art/index.html">Art [嘉敏's little art gallery]</a>
+                            <p>
+                                Little gallery of art I made that I think is sort of okay and want to share.
+                            </p>
+                        </li>
+                        <li><a href="/learning_plan/exhibition.html">Exhibition</a>
+                            <p>
+                                Super secret password locked part of my website. For specific people only, sorry. Nothing intresting's there anyways, so don't feel too bad!
+                            </p>
+                        </li>
+                        <li><a href="https://nik0la1.atabook.org/">Guestbook</a>
+                            <p>
+                                Off-site, actually. Leave a mesage for me here! Please.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img style="position: fixed; bottom: 0px; left: 0px; height: 25%" src="/assets/deco/deco_bjdmagazinewink.webp" />
+</body>
+
+</html>

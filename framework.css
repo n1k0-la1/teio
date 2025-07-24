@@ -1,0 +1,127 @@
+body {
+    background: url(assets/bgs/dither_it_sonny-mauricio-kIr8e-01eAw-unsplash-tiled.png);
+    background-size: 30rem;
+}
+
+#big_div {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#laced_in {
+    min-height: 30rem;
+    border: .8rem solid transparent;
+    border-image: url(/assets/bgs/border_lace_fancy_white.png) 20 round;
+    background-clip: content-box;
+    background-image: url(assets/bgs/bgtile_strip_a77.gif);
+}
+
+header {
+    height: 12rem;
+    position: relative;
+    background-image: url(/assets/17434566329213124.png);
+    background-size: cover;
+    padding-bottom: 5px;
+    border-width: 2px 2px 0px 2px;
+    border-style: ridge;
+    border-color: #608dc4;
+}
+
+header h1 {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    padding: 0;
+    color: #fafdff;
+    font-family: ysbth;
+    font-size: 72px;
+    -webkit-text-stroke: 3px #9daebd;
+}
+
+.food {
+    font-size: 1.8rem;
+    font-family: fusionpixel;
+    -webkit-text-stroke: 1px #9daebd;
+    color: #f0f8ff;
+    background-color: #e0f5ff;
+    font-style: italic;
+}
+
+#news {
+    color: red;
+    background-color: #ffffff;
+    border-width: 2px 2px 2px 2px;
+    border-style: ridge;
+    border-color: #608dc4;
+    display: block;
+}
+
+#footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+}
+
+#realcontent {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 1rem;
+}
+
+.ezbox {
+    border-width: 2px 2px 2px 2px;
+    border-style: ridge;
+    border-color: #608dc4;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.ezboxwpadding {
+    border-width: 2px 2px 2px 2px;
+    border-style: ridge;
+    border-color: #608dc4;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.separation {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 1rem;
+}
+
+.lowerscroll {
+    overflow: auto;
+}
+
+textarea {
+    background-color: hsl(204, 100%, 99%);
+}
+
+#meow {
+    padding-top: 1rem !important;
+    margin-top: 1rem !important;
+}
+
+.work {
+    background-color: #eaf8fe;
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    padding: 5px;
+}

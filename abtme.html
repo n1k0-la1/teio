@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>嘉敏 (Disambiguation</title>
+    <link rel="icon" type="image/x-icons" href="assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + ") ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            background-image: url(assets/bgs/Tiling-Grass_main.jpg);
+            background-size: 50%;
+        }
+        
+        #wrapper {
+            display: flex;
+            margin: 3rem;
+        }
+        
+        #container {
+            flex: 4.5;
+            height: 35rem;
+            overflow-y: scroll;
+            border-style: solid;
+            border-image: url("https://foollovers.com/mat/plate/pl034-plate-i09.gif") 55 round;
+            background-image: url(/assets/bgs/plad_faded_blue.jpg);
+            box-shadow: 0 0 5px 5px white inset;
+            border-width: 45px;
+            background-clip: content-box;
+            /* child instructions*/
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #top {
+            display: flex;
+            flex: 3;
+        }
+        
+        #top>div {
+            margin: 8px;
+            background: white;
+        }
+        
+        #bottom>div {
+            margin: 0 8px 8px 8px;
+            background: white;
+        }
+        
+        #bottom {
+            flex: 1;
+            display: flex;
+        }
+        
+        #laced_in {
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 fill round;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+        
+        #main {
+            flex: 2;
+        }
+        
+        #currently {
+            flex: 1;
+            display: grid;
+            grid-template-areas: "a b" "c d";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5px;
+        }
+        
+        #currently>div {
+            border: 2px dotted #c6c6c6;
+            font-size: smaller;
+            padding: 1px;
+        }
+        
+        #kinbox {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            padding-top: 1rem;
+        }
+        
+        .titledimg {
+            width: 1fr;
+            color: #c6c6c6;
+            font-size: .6rem;
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        .titledimg img {
+            max-width: 10rem;
+        }
+        
+        #box {
+            border: 2px dashed #8b8b8b;
+            width: 100%;
+            padding: 5px 10px;
+            flex: 3;
+            max-height: 31.5rem;
+            overflow-y: scroll;
+        }
+        
+        #box>h1 {
+            color: #8b8b8b;
+            font-size: 1.5rem;
+            text-align-last: left;
+            border-left: 0.2rem solid #8b8b8b;
+            margin: 5px 5px 0px auto;
+            padding: 0px 0px 0px 5px;
+            background: hsl(199, 100%, 94%, 80%);
+        }
+        
+        #box2 {
+            border: 2px dashed #8b8b8b;
+            width: 100%;
+            padding: 5px 10px;
+        }
+        
+        #quizresults img {
+            width: 250px;
+            height: 150px;
+        }
+        
+        #back {
+            border-style: solid;
+            border-image: url(/assets/bgs/border_biscut1.png) 4 fill round;
+            position: fixed;
+            bottom: 10px;
+            left: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="top">
+                <div id="laced_in">
+                    <div id="main" style="text-align: center;">
+                        <img src="/assets/pfp/fenkko_scaramouce.png" style="width: 15rem;" alt="Art by Fenkko">
+                        <p style="margin:0; font-size: larger;"><b>嘉敏/Niko</b></p>
+                        <img src="assets/buttons/what/chinese.png" style="width: 33%;"><img src="assets/buttons/what/gay.png" style="width: 33%;"><img src="assets/buttons/what/infp.png" style="width: 33%;">
+                    </div>
+                    What're you up to right now?
+                    <div id="currently">
+                        <div>
+                            <u>Watching:</u><br>TBHX
+                        </div>
+                        <div>
+                            <u>Reading:</u><br>ORV side-stories, The Idiot
+                        </div>
+                        <div>
+                            <u>Playing:</u><br> Balatro, Minecraft
+                        </div>
+                        <div>
+                            <u>Working on:</u><br>Drawing boxes, reworking website
+                        </div>
+                    </div>
+                    <span style="font-size: 0.4999999999999999999rem"> <div>
+                        <div id="tutorialAge"></div>
+                </div>
+                <script>
+                    const hourInMillis = 3600000;
+                    const dayInMillis = 86400000;
+                    const monthInMillis = 2592000000; // this number assumes a month with 30 days
+
+                    // Replace the below date with your date
+                    const myDate = new Date("June 3 2025");
+
+                    function getAge() {
+                        let diff = Date.now() - myDate.valueOf();
+
+                        let months = Math.floor(diff / monthInMillis);
+                        diff = diff - (months * monthInMillis);
+
+                        let days = Math.floor(diff / dayInMillis);
+                        diff = diff - (days * dayInMillis);
+
+                        let hours = Math.floor(diff / hourInMillis);
+
+                        let formattedTime = "As of " + months + " months, " + days + " days, and " + hours + "hours ago";
+                        document.getElementById("tutorialAge").innerText = formattedTime;
+                    }
+                    getAge();
+                    setInterval(getAge, 60000); // Calls getAge() every minute
+                </script>
+                </span>
+                </div>
+
+                <div id="box">
+                    <h1>About me</h1>
+                    Haaai! My name's Niko, I'm a [you'll have to stalk me harder to find my age] yrold chinese-american tboy who likes cute things。I'm fluent in english & cantonese (debatable) and a complete newb in mandrin so please talk to me 2 help me learn! I'm still
+                    a student, but I'm studying to become an archivist / collections assistant! <br> I love dolls, esp BJDs, and have 2 right now! (Shrine/collection page coming soon?) I have a bunch of <a href="https://toyhou.se/nik0la1"
+                        target="_blank">little guys</a> (
+                    <- old touhouse account I really need to update..) that I draw and have vivid visions about! I 'd like to think myself an alright artist, but I hope one day my characters can be fleshed out and drawn enough to properly share them with the world!
+                    <h1>Literally me...</h1>
+                    I could yap on n on about myself, but a picture tells a thousand words, right?
+                    <div id="kinbox">
+                        <div class="titledimg"><a href="https://www.instagram.com/L83957279" target="_blank"><img src="https://file.garden/Ze6P3FucmRDZDfxQ/Screenshot%202025-04-21%20101728.png"></a><br>C!Tommyinnit from the DSMP<br>(please don't ask
+                        if you 're going to be mean about it)</div>
+                        <div class="titledimg"><img src="https://file.garden/Ze6P3FucmRDZDfxQ/scara.jpg"><br>Scaramouche/Wanderer from the Genshin Impact<br>my beautiful princess with a disorder</div>
+                        <div class="titledimg"><img src="https://file.garden/Ze6P3FucmRDZDfxQ/kimdokja.jpg" alt="Art by Sleepy-C"><br>Kim Dokja from ORV<br><span style="color: transparent;">Read orv</span></div>
+                </div>
+                <h1>About the website</h1>
+                As you might've guessed, I 'm in no way a professional programer! I made this website end of summer 2024, after being inspired by websites like SWIRL and MONSIEURDOLL! The website's main purpouse is 1) want a place where I can showcase
+                        my art/thoughts with out algorithm stuff bothering me (BORING REASON!) and 2) I think cute, fun websites like this are important 4 enrichment
+                        'nd a healthy web diet (FUN REASON!) Most if not all the css is in the html file where it's used so i guess you can look through the code & copy bits if you really want... It 's not that good though. You probably shouldn't. Just please dont copy whole layouts. Not only because that
+                        's mean and rude but also because you're probably going to get bad habits from me. I don 't know what I'm doing. I try my best to proofread everything b4 pushing updates, but i 'm not perfect, any mistakes are my own.
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="box2">
+                <div class="button-marquee" style="height: 21px;">
+                    <div class="track">
+                        <img src="assets/buttons/IMVU/yaoi.webp">
+                        <a href="https://www.tumblr.com/rookmeo/759802928707125248/twst-dorms-nrc-shiny-buttons-rb-credit-if?source=share" target="_blank"><img src="assets/buttons/IMVU/heartslabyul.gif"></a> <img src="assets/buttons/IMVU/lolita.webp"> <img src="assets/buttons/IMVU/darlingred.webp">
+                        <a href="https://www.tumblr.com/rookmeo/759802928707125248/twst-dorms-nrc-shiny-buttons-rb-credit-if?source=share" target="_blank"><img src="assets/buttons/IMVU/octavinelle.gif"></a>
+                        <img src="assets/buttons/IMVU/badboy.webp"> <img src="assets/buttons/IMVU/internetangel.webp"> <img src="assets/buttons/IMVU/lovesick.webp">
+                        <img src="assets/buttons/IMVU/nerd.webp"> <img src="assets/buttons/IMVU/ouji.webp"> <img src="assets/buttons/IMVU/kissme.webp">
+                        <!--Set 2-->
+                        <img src="assets/buttons/IMVU/yaoi.webp">
+                        <a href="https://www.tumblr.com/rookmeo/759802928707125248/twst-dorms-nrc-shiny-buttons-rb-credit-if?source=share" target="_blank"><img src="assets/buttons/IMVU/heartslabyul.gif"></a> <img src="assets/buttons/IMVU/lolita.webp"> <img src="assets/buttons/IMVU/darlingred.webp">
+                        <a href="https://www.tumblr.com/rookmeo/759802928707125248/twst-dorms-nrc-shiny-buttons-rb-credit-if?source=share" target="_blank"><img src="assets/buttons/IMVU/octavinelle.gif"></a>
+                        <img src="assets/buttons/IMVU/badboy.webp"> <img src="assets/buttons/IMVU/internetangel.webp"> <img src="assets/buttons/IMVU/lovesick.webp">
+                        <img src="assets/buttons/IMVU/nerd.webp"> <img src="assets/buttons/IMVU/ouji.webp"> <img src="assets/buttons/IMVU/kissme.webp">
+                    </div>
+                </div>
+                <div id="quizresults">
+                    <a href="https://www.theotaku.com/quizzes/view/3855/which_vocaloid_are_you%3F"><img src="http://www.theotaku.com/guru_results/3855_Oliver.jpg" alt="Which Vocaloid Are You?" style="width: 270px;" /></a>
+                    <a href='https://www. theotaku.com/quizzes/view/3760/what_type_of_dere_are_you%3F_ '><img src='http://www.theotaku.com/guru_results/3760_Yandere.jpg '></a>
+                    <A href="https://www.theotaku.com/quizzes/view/3541/which_kuroshitsuji_character_would_you_date%3F"><img loading="lazy" style="width: 270px;" src="http://www.theotaku.com/guru_results/3541_William.jpg" alt="Which Kuroshitsuji Character Would You Date?" /></a>
+                    <A href="https://www.theotaku.com/quizzes/view/4069/what_type_of_otaku_are_you%3F"><img style="width: 270px;" loading="lazy" src="http://www.theotaku.com/guru_results/4069_Hardcore_Otaku.jpg" alt="What type of otaku are you?" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="back"><a href="index.html"><h1><mark>Go Back Home?</mark></h1></a></div>
+</body>
+
+</html>

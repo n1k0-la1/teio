@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Email Scripts</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="/learning_plan/portfolionavi.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        #meow {
+            min-height: 10rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 fill round;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big_div">
+        <img src="/assets/deco/windchime1.gif" class="sticker" style="top: 0; right:0; position: absolute;" onclick="sfxWindchime()" onmouseover="sfxWindchime">
+        <script>
+            function sfxWindchime() {
+                var sfx = new Audio("https://files.catbox.moe/3rzc9r.mp3");
+                sfx.sfxWindchime();
+            }
+        </script>
+        <div id="laced_in">
+            <header>
+                <img src="/assets/deco/bandagepatches.png" class="sticker" style="width: 15rem; position: relative; bottom: -4rem; left: -4rem; transform: rotate(20deg);">
+                <h1>Email Scripts</h1>
+            </header>
+            <marquee id="news">crazy how I think I'm not brave enough to do some things and then I just go and get them done. and it's always like this</marquee>
+            <div id="realcontent">
+                <breadcrumb-trail></breadcrumb-trail>
+                <div class="ezbox" id="meow">
+                    <h3><u>Main Email... ԅ(¯﹃¯ԅ)</u></h3>
+                    <br>
+                    <p>Dear [■■],
+                        <br><br>My name is Niko, and I'm a first year student at Highline Big Picture. I'm contacting you today because our school is modeled after letting students go out into the real world to learn by interviewing & talking to professionals.
+                        I was wondering if it would be possible to set up an interview with you/one of your [■■]s about your/their career?
+                        <br><br>I've always been very interested in [■■, ■■ and ■■], and if possible, I'd love to learn about your career as a [■■]; especially [■■].
+                        <br><br>I'm available all day Tuesdays and Thursdays, but I understand you're busy so please don't hesitate to tell me if something else would work better! Thank you for your time,
+                        <br><br>Sincerely,
+                        <br>Niko Vuong</p>
+                    <h3><u>Artist Script...</u></h3>
+                    <p>Dear [■■],
+                        <br><br> My name is Niko, I'm a first year student at Highline BIg Picture. I'm emailing you today because my advisor, Christine Morse, referred me to you as an artist with experience working with art galleries here in the Washington
+                        area. I'm interested in the gallery/museum field, and was wondering if you could have any contacts in galleries you've worked with that would be interested in doing an informational interview with me?<br><br>Thank you for your
+                        time,
+                        <br>Niko Vuong</p>
+                    <h3><u>Call script.... Regretably..</u></h3>
+                    <p>Hi! My name is Niko, I'm a first year student at Highline Big Picture
+                        <br><br>I go to school which lets students learn by going out into the real world and talk to proffessionals.
+                        <br><br>I'm calling today to ask if you/one of your [job] would be avalible to do an informational interview with me so I could learn more about your/their career?
+                        <br><br>I am avalible all day on Tuesdays & Thursdays You can reach me through phone @ (206) 307-1985 or through email @ 4035806@g.highlineschools.org/Is there anyway I can <b>contact you in the future?</b>
+                        <br><br>Thank you!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

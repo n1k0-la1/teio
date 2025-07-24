@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘉敏's little art gallery</title>
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <link rel="icon" type="image" href="/assets/favicons/plantpainting.gif">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        .item-image {
+            aspect-ratio: 6/6;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <input type="checkbox" id="description-toggle" />
+            <label for="description-toggle" onclick="this.classList.toggle('active');">
+        <div id="title">
+          <div class="title-text">嘉敏's little art gallery</div>
+          <div class="title-arrow">?</div>
+        </div>
+        </label>
+            <div class="description">
+                My (un)profesional art collection!
+                <br>
+                <span style="text-align: right;"><a href="/index.html">Home</a> - <a href="https://utopianscrapbook.neocities.org/" target="_blank">Template</a></span>
+            </div>
+        </header>
+
+        <hr>
+
+        <div id="gallery">
+            <a href="page/4.html">
+                <div class="item-image"><img src="thumbnail/tmmy-pixeled.png"></div>
+                <div class="item-title">Getting there.</div>
+            </a>
+            <a href="page/3.html">
+                <div class="item-image"><img src="thumbnail/ineedhimdead-pixeled.png"></div>
+                <div class="item-title">Guards! Eviscerate this man!</div>
+            </a>
+            <a href="page/2.html">
+                <div class="item-image"><img src="thumbnail/whatyoulookingcrazy4-pixeled.png"></div>
+                <div class="item-title">Worst Date ever</div>
+            </a>
+            <a href="page/1.html">
+                <div class="item-image"><img src="thumbnail/yexuancrossdressing-pixeled.png"></div>
+                <div class="item-title">Haha nooo don't kys you're so sexy {WIP}</div>
+            </a>
+            <a href="page/Uhm.html">
+                <div class="item-image"><img src="thumbnail/kimdokjasmile_pixeled.png"></div>
+                <div class="item-title">yup!</div>
+            </a>
+            <a href="page/sunday.html">
+                <div class="item-image"><img src="thumbnail/sunday-pixeled.png"></div>
+                <div class="item-title">I haven't played hsr in 2 years {WIP}</div>
+            </a>
+            <a href="page/guts_2024.html">
+                <div class="item-image"><img src="thumbnail/pixeled_guts.jpg"></div>
+                <div class="item-title">Guts 2024</div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

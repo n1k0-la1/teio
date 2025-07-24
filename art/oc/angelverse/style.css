@@ -1,0 +1,48 @@
+body {
+    background-size: 30rem;
+}
+
+#news {
+    color: red;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px ridge gray;
+    box-shadow: -1px 20px 38px -30px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: -1px 20px 38px -30px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: -1px 20px 38px -30px rgba(0, 0, 0, 0.26);
+}
+
+#message1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20rem;
+    width: 50%;
+    background-color: white;
+    box-shadow: 1px 20px 38px 0px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 1px 20px 38px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 1px 20px 38px 0px rgba(0, 0, 0, 0.26);
+}
+
+#msg1body {
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.whead {
+    padding: 5px;
+    display: flex;
+}
+
+.wtitle {
+    text-align: left;
+}
+
+.wicon {
+    text-align: right;
+}

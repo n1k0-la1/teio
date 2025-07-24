@@ -1,0 +1,477 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>the earth is ONLINE</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            background: url(assets/bgs/dither_it_sora5.png);
+            font-family: Ms Ui Gothic;
+            color: #5e5e5e;
+            font-size: 1rem;
+            line-height: 1.188rem;
+            cursor: url("https://file.garden/Ze6P3FucmRDZDfxQ/1%20-%20Normal%20Select.ani"), auto;
+        }
+        
+        .container {
+            width: 80%;
+            min-height: 30rem;
+            border: 1rem solid transparent;
+            border-image: url(/assets/bgs/border_lace_fancy_white.png) 20 round;
+            background-image: url(/assets/bgs/bgtile_bluestripes.gif);
+            background-clip: content-box;
+        }
+        
+        header {
+            height: 20%;
+            position: relative;
+            background-image: url(/assets/dither_it_goofyheader.png);
+            background-size: cover;
+            border-width: 2px 2px 0px 2px;
+            border-style: ridge;
+            border-color: skyblue;
+            overflow: hidden;
+            z-index: 2;
+        }
+        
+        h1 {
+            position: relative;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .marqueebox {
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+        }
+        
+        .lowercont {
+            display: flex;
+        }
+        
+        .content {
+            display: flex;
+            flex: 1;
+            padding: 1rem;
+            gap: 16px;
+        }
+        
+        .rightbox>div {
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+            margin: 0px;
+            overflow: auto;
+            gap: 16px;
+        }
+        
+        .leftbox {
+            flex: 1;
+        }
+        
+        .box1L {
+            height: 12rem;
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+            margin: 0px;
+            overflow: auto;
+        }
+        
+        .box2L {
+            min-height: 21rem;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            padding: 1rem 0rem;
+            gap: 16px;
+        }
+        
+        .box3LL-wrapper {
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .box3LL-wrapper>div {
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+            margin: 0px;
+        }
+        
+        .box4LLT {
+            height: 10rem;
+            overflow: auto;
+            margin-bottom: 16px;
+        }
+        
+        .box5LLM {
+            min-height: 8rem;
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+        }
+        
+        .box5LLM>textarea {
+            height: 5rem;
+            width: 97%;
+            font-family: Ms Ui Gothic;
+            padding: 3.5px;
+            margin: 0 3.5px;
+        }
+        
+        .box4LR-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 0px;
+            gap: 16px;
+        }
+        
+        .box6LRTT {
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+            padding: 3.5px;
+            overflow: hidden;
+            height: 35px;
+        }
+        
+        .box5LRT {
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+            margin: 0px;
+            min-height: 10rem;
+        }
+        
+        .box5LRB {
+            border-style: ridge;
+            border-color: skyblue;
+            background-color: white;
+            border-width: 2px;
+            margin: 0px;
+            height: 13rem;
+            overflow: auto;
+        }
+        
+        .rightbox {
+            width: 13rem;
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+        }
+        
+        .microblog {
+            height: 30rem;
+            overflow: hidden;
+        }
+        
+        .stampbox {
+            margin-bottom: 16px;
+            padding: 3.5px;
+            /*flex:1*/
+            overflow: auto;
+            height: 11.5em;
+        }
+        
+        .stampbox>img {
+            width: 50%;
+        }
+        
+        .decobox {
+            margin-bottom: 16px;
+            padding: 3.5px;
+            overflow: hidden;
+            height: 35px;
+        }
+        
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .content li {
+            list-style: square inside url("/assets/ball_s_06.gif");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1></h1>
+        </header>
+        <div class="marqueebox">
+            <marquee>
+                <span style="color: red">ଘ(੭ˊ꒳ˋ)੭ ‥…━━⚠️FILEGARDEN IS CURRENTLY DOWN, WHICH MEANS MOST OF MY IMAGES ARE BROKEN. PLS BE PATIENT CURRENTLY WORKING ON MIGRATING 2 SELF HOSTING⚠️━★</span>
+            </marquee>
+        </div>
+        <div class="lowercont">
+            <div class="sidenav">
+                <ul>
+                    <li>
+                        <span class="sidenav_sections"><b>Sitely:</b>──────╮</span>
+                    </li>
+                    <li>
+                        <a href="index.html">Homepage</a>
+                        <span style="font-size: 70%">◄ You are here!</span>
+                    </li>
+                    <li><a href="abtme.html">About Me</a>
+                        <span style="font-size: 75%; color: crimson"><i>new!</i></span></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="credits.html">Credits</a>
+                        <span style="font-size: 75%; color: crimson"><i>new!</i></span></li>
+                    <li>
+                        <span class="sidenav_sections"><b>Blogs:</b>──────╮</span>
+                    </li>
+                    <li>
+                        <a href="blog.html">Diary</a>
+                    </li>
+                    <li><a href="imageblog.html">Image Blog</a></li>
+                    <li>
+                        <span class="sidenav_sections"><b>Showcase:</b>────╮</span>
+                    </li>
+                    <li><a href="/art/index.html">Art</a>
+                        <span style="font-size: 75%; color: crimson"><i>up!</i></span></li>
+                    <li><a href="learning_plan/exhibition.html">Exhibition</a></li>
+                    <li>
+                        <span class="sidenav_sections"><b>Silly Things:</b>───╮</span>
+                    </li>
+                    <li>
+                        <a href="https://nik0la1.atabook.org/" target="_blank">Guestbook</a>
+                    </li>
+                </ul>
+                <a href="https://www.mangaupdates.com/series/zjsl68m/i-failed-to-oust-the-villain"><img src="/assets/deco/banner_ifailedtooustthevillain_20_.jpg" style="display: block; width: 95%; margin-left: auto; margin-right: auto; margin-top: 5px;"></a>
+                <iframe width="180" height="180" style="border:none; display: block; margin-left: auto; margin-right: auto; margin-top: 5px;" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+                <a href="https://www.acbjd.com/xiao-chu-fullset-p-20014.html?cPath=327_328" target="_blank"><img src="/assets/deco/bannerad_dollzone_xiaochu_sale_pixeled.jpg" style="display: block; width: 95%; margin-left: auto; margin-right: auto; margin-top: 5px;" alt="please buy me this doll i'm begging you im so broke"></a>
+            </div>
+            <div class="content">
+                <div class="leftbox">
+                    <div class="box1L">
+                        <a href="https://www.tumblr.com/llocket/760112584131264512?source=share" target="_blank">
+                            <img src="/assets/deco/deco_sillycatsticker_bluefish.png" style="float: right; height: 92%" /></a>
+                        <p>
+                            Hello! My name is <span style="font-family: creampuff">嘉敏</span>/Nikolai/Niko! English isn't my first language, apologies for any misunderstandings/mistakes. Please be patient with me!<br>This page was made for a 1920 x 1280
+                            monitor on firefox, by an amateur. It is <i>definitely</i> not mobile friendly!
+                        </p>
+                    </div>
+                    <div class="box2L">
+                        <div class="box3LL-wrapper">
+                            <div class="box4LLT">
+                                <div class="decoheading">Updates</div>
+                                <ul style="font-size: 0.7rem">
+                                    <li>0250108 - Added <a href="abtme.html">Wip ver. of About Me</a></li>
+                                    <li>0241031 - Added <a href="/art/index.html">Art Gallery</a></li>
+                                    <li>0241004 - Added <a href="sitemap.html">Sitemap</a></li>
+                                    <li>0240929 - Added <i>my</i> (jank) buttons!</li>
+                                    <li>0240923 - Added & fixed button marquee</li>
+                                    <li>0240922 - Moved to <a href="https://nekoweb.org/"><i>Nekoweb</i></a></li>
+                                    <li>0240918 - Homepage 1.01</li>
+                                    <li>0240906 - Added <a href="blog.html">Diary</a> page</li>
+                                </ul>
+                            </div>
+                            <div class="box6LLB">
+                                <link rel="stylesheet" href="https://goooby.neocities.org/onionring.css">
+                                <div id='transmasc_ring'>
+                                    <script type="text/javascript" src="https://goooby.neocities.org/onionring-variables.js"></script>
+                                    <script type="text/javascript" src="https://goooby.neocities.org/onionring-widget.js"></script>
+                                </div>
+                            </div>
+                            <div class="box5LLM">
+                                <div class="decoheading">Link me!</div>
+                                <a href="/assets/buttons/button_嘉敏sroom.png"><img src="/assets/buttons/button_嘉敏sroom.png" style="display: block; margin: 5px auto"></a>
+                                <textarea><a href="https://nik0la1.nekoweb.org/index.html"><img src="/assets/buttons/button_嘉敏sroom.png"></a></textarea>
+                                <a href="/assets/buttons/button_nikolaisroom.png"><img src="/assets/buttons/button_nikolaisroom.png" style="display: block; margin: 5px auto"></a>
+                                <textarea><a href="https://nik0la1.nekoweb.org/index.html"><img src="/assets/buttons/button_nikolaisroom.png"></a></textarea>
+                                <br><span style="font-size: .96rem; padding: 3.5px;"> Hotlinking should be fine... Probably. Wanna exchange buttons? Msg me on <a href="https:// discord.com/users/787553928615165985" title="niko.lai">discord!</a></span>
+                            </div>
+                        </div>
+                        <div class="box4LR-wrapper">
+                            <div class="box6LRTT">
+                                <div class="button-marquee">
+                                    <div class="track">
+                                        <a href="https://monsieurdoll.neocities.org" target="_blank"><img src="assets/buttons/others/monsieurdoll.png"></a>
+                                        <a href="https://hgari.neocities.org/"><img src="assets/buttons/others/hgaributton.png"></a>
+                                        <a href="https://lovesick.cafe/"><img src="assets/buttons/others/lovesick.png"></a>
+                                        <a href="https://ribo.zone/"><img src="assets/buttons/others/ribose.png"></a>
+                                        <a href="https://angelinmyhead.nekoweb.org/"><img src="https://dl.dropbox.com/scl/fi/oywze0923d21xbdgh2hve/barcodeaimh.gif?rlkey=vp91ch8orfjcc45e92rtpy2if&st=ohoawsnr&raw=1"></a>
+                                        <a href="https://swirl.neocities.org/"><img src="assets/buttons/others/swirl.gif"></a>
+                                        <a href="https://esterhazy.nekoweb.org"><img src="assets/buttons/others/esterhazy.png"></a>
+                                        <a href="https://cereza.zone/" style="margin:auto"><img src="https://cereza.zone/res/webbutton/88x31.gif" alt="cereza.zone"></a>
+                                        <a href="https://ranfren.neocities.org/"><img style="height: 31;" src="assets/buttons/others/ranfren.gif"></a>
+                                        <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE.GIF" style="image-rendering: pixelated; height: 34;"></a>
+                                        <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png"></a>
+                                        <a href="https://sunshine.nekoweb.org/" target="_blank" title="Sol's Sunflower Field"><img src="https://sunshine.nekoweb.org/assets/sitebutton.gif"></a>
+                                        <!--Button set 2-->
+                                        <a href="https://monsieurdoll.neocities.org" target="_blank"><img src="assets/buttons/others/monsieurdoll.png"></a>
+                                        <a href="https://hgari.neocities.org/"><img src="assets/buttons/others/hgaributton.png"></a>
+                                        <a href="https://lovesick.cafe/"><img src="assets/buttons/others/lovesick.png"></a>
+                                        <a href="https://ribo.zone/"><img src="assets/buttons/others/ribrose.png"></a>
+                                        <a href="https://swirl.neocities.org/"><img src="assets/buttons/others/swirl.gif"></a>
+                                        <a href="https://angelinmyhead.nekoweb.org/"><img src="https://dl.dropbox.com/scl/fi/oywze0923d21xbdgh2hve/barcodeaimh.gif?rlkey=vp91ch8orfjcc45e92rtpy2if&st=ohoawsnr&raw=1"></a>
+                                        <a href="https://esterhazy.nekoweb.org"><img src="assets/buttons/others/esterhazy.png"></a>
+                                        <a href="https://cereza.zone/" style="margin:auto"><img src="https://cereza.zone/res/webbutton/88x31.gif" alt="cereza.zone"></a>
+                                        <a href="https://ranfren.neocities.org/"><img style="height: 31;" src="assets/buttons/others/ranfren.gif"></a>
+                                        <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE.GIF" style="image-rendering: pixelated; height: 34;"></a>
+                                        <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png"></a>
+                                        <a href="https://sunshine.nekoweb.org/" target="_blank" title="Sol's Sunflower Field"><img src="https://sunshine.nekoweb.org/assets/sitebutton.gif"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box5LRT">
+                                <div class="decoheading"><a href="/art/page/sunday.html" style="text-decoration: none;">Latest Art</a></div>
+                                <img src="/art/thumbnail/sunday-pixeled.png" style="display: block;  width: 100%;">
+                            </div>
+                            <div class="box5LRB">
+                                <div class="decoheading">To do</div>
+                                <ul style="font-size: 0.7rem;">
+                                    <li> Redo sitemap</li>
+                                    <li> <s>Art page</s></li>
+                                    <li> <s>Make a button</s> Make a better button</li>
+                                    <li> Add view counter</li>
+                                    <li> BJD shrine page(s) (-And a wishlist/ISO/tracker?)</li>
+                                    <li> <s>Sitemap</s></li>
+                                    <li> Credits page</li>
+                                    <li> Add <a href="https://www.imood.com">imood</a> widget</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightbox">
+                    <div class="microblog" style="overflow: hidden">
+                        <div class="decoheading">Microblog</div>
+                        <!-- start sw-rss-feed code -->
+                        <script type="text/javascript" style="overflow: hidden">
+                            <!--
+                            rssfeed_url = new Array();
+                            rssfeed_url[0] = "https://status.cafe/users/nik0la1.atom";
+                            rssfeed_frame_width = "100%";
+                            rssfeed_frame_height = "90%";
+                            rssfeed_scroll = "off";
+                            rssfeed_scroll_step = "3";
+                            rssfeed_scroll_bar = "off";
+                            rssfeed_target = "_blank";
+                            rssfeed_font_size = ".5rem";
+                            rssfeed_font_face = "Ms Ui Gothic";
+                            rssfeed_border = "off";
+                            rssfeed_css_url = "";
+                            rssfeed_title = "off";
+                            rssfeed_title_name = "";
+                            rssfeed_title_bgcolor = "#3366ff";
+                            rssfeed_title_color = "#fff";
+                            rssfeed_title_bgimage = "";
+                            rssfeed_footer = "off";
+                            rssfeed_footer_name = "rss feed";
+                            rssfeed_footer_bgcolor = "#fff";
+                            rssfeed_footer_color = "#333";
+                            rssfeed_footer_bgimage = "";
+                            rssfeed_item_title_length = "500";
+                            rssfeed_item_title_color = "#666";
+                            rssfeed_item_bgcolor = "#fff";
+                            rssfeed_item_bgimage = "";
+                            rssfeed_item_border_bottom = "on";
+                            rssfeed_item_source_icon = "off";
+                            rssfeed_item_date = "on";
+                            rssfeed_item_description = "off";
+                            rssfeed_item_description_length = "120";
+                            rssfeed_item_description_color = "#666";
+                            rssfeed_item_description_link_color = "#333";
+                            rssfeed_item_description_tag = "off";
+                            rssfeed_no_items = "0";
+                            rssfeed_cache = "87e3936dc1d6678f3fbb6649304819bd";
+                            //-->
+                        </script>
+                        <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+                        <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
+                        <span style="font-size: 0.7rem; color: #ccc; position: float; bottom: 0px; left: 2px">Powered by
+                            <a href="https://surfing-waves.com" rel="noopener" target="_blank"
+                                style="color: #ccc">Surfing Waves</a></span>
+                        <!-- end sw-rss-feed code -->
+                    </div>
+                    <div class="stampbox">
+                        <img loading="lazy" src="assets/stamps/scaramouche.png" /><img loading="lazy" src="assets/stamps/ilovedrawing.gif" /><img src="assets/stamps/doodlecat.gif" loading="lazy>" /><img loading="lazy" src="assets/stamps/transkdj.webp"
+                        /><img loading="lazy" src="assets/stamps/bjd_kneejoint.png" /><img loading="lazy" src="assets/stamps/twst_heartslabyul.png" /><img loading="lazy" src="assets/stamps/freepalestine.webp" /><img loading="lazy" src="assets/stamps/ienjoymakingrandomartinthemiddleofthenight.png"
+                        /><img loading="lazy" src="assets/stamps/sebastian.gif" /><img src="assets/stamps/bjd2.png" loading="lazy" /><img loading="lazy" src="assets/stamps/nso_transformation.webp" /><img loading="lazy" src="assets/stamps/gakupo.png" /><img
+                            loading="lazy" src="assets/stamps/icollectplushies.png" /><img loading="lazy" src="assets/stamps/twst_azultsum.png" /><img loading="lazy" src="assets/stamps/makebadart.webp" /><img loading="lazy" src="assets/stamps/bjd.png" /><img
+                            loading="lazy" src="assets/stamps/yaoi.png" /><img loading="lazy" src="assets/stamps/transyjh.webp" /><img loading="lazy" src="assets/stamps/myhtmlfuckingsucks.png" /><img loading="lazy" src="assets/stamps/iamwaytooforgetfull.gif"
+                        /><img loading="lazy" src="assets/stamps/tetris.webp" /><img loading="lazy" src="assets/stamps/ohshc_honey.webp" /><img loading="lazy" src="assets/stamps/transhsy.webp" /><img loading="lazy" src="assets/stamps/dmmd.png" /><img
+                            loading="lazy" src="assets/stamps/judar.gif" /><img loading="lazy" src="assets/stamps/ilovetodostuffonthecomputer.jpg" />
+                    </div>
+                    <div class="decobox">
+                        <div class="button-marquee">
+                            <div class="track">
+                                <img style="height: 31" src="assets/buttons/bestvieweddesktop.gif" />
+                                <img src="assets/buttons/signmyguestbook!.gif" style="height: 31" />
+                                <img src="assets/buttons/thissiteismikuapproved.webp" style="height: 31" />
+                                <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button11.gif" style="height: 31"></a>
+                                <img style="height: 31;" src="assets/buttons/luownsite.gif">
+                                <img src="assets/buttons/firefoxnow.gif" />
+                                <img style="height: 31" src="assets/buttons/dumbasswebmasterahead.gif" />
+                                <img style="height: 31" src="assets/buttons/piracynow.gif" />
+                                <img style="height: 31;" src="assets/buttons/bookmarkthispage.gif">
+                                <img style="height: 31" src="assets/buttons/uBlockOriginNOW.gif" />
+                                <img style="height: 31;" src="assets/buttons/aqueercodedthis.gif">
+                                <img style="height: 31;" src="assets/buttons/madewVSC.gif">
+                                <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe" /></a>
+                                <!-- Button set 2-->
+                                <img style="height: 31" src="assets/buttons/bestvieweddesktop.gif" />
+                                <img src="assets/buttons/signmyguestbook!.gif" style="height: 31" />
+                                <img src="assets/buttons/thissiteismikuapproved.webp" style="height: 31" />
+                                <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button11.gif" style="height: 31"></a>
+                                <img style="height: 31;" src="assets/buttons/luownsite.gif">
+                                <img src="assets/buttons/firefoxnow.gif" />
+                                <img style="height: 31" src="assets/buttons/dumbasswebmasterahead.gif" />
+                                <img style="height: 31" src="assets/buttons/piracynow.gif" />
+                                <img style="height: 31;" src="assets/buttons/bookmarkthispage.gif">
+                                <img style="height: 31" src="assets/buttons/uBlockOriginNOW.gif" />
+                                <img style="height: 31;" src="assets/buttons/aqueercodedthis.gif">
+                                <img style="height: 31;" src="assets/buttons/madewVSC.gif">
+                                <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="vocaring">
+                            <script src="https://webring.adilene.net/widget.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span style="color: #5e5e5e">Webmastering since 2024 - This website uses code from a
+            <a href="https://swirl.neocities.org/template/luckytheme-CODE" target="_blank">template</a> by
+            <a href="https://swirl.neocities.org/" target="_blank">swirl</a></span>
+    </div>
+    <img style="position: fixed; bottom: 0px; left: 0px; height: 25%" src="/assets/deco/deco_bjdmagazinewink.webp" />
+</body>
+
+</html>

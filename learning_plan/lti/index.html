@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>LTI Tracker</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="/learning_plan/portfolionavi.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        #meow {
+            min-height: 10rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 fill round;
+        }
+        
+        #wrapper {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #tab-wrapper {
+            display: grid;
+            width: 90%;
+            margin-bottom: 0px;
+            height: 2rem;
+            padding: 0px;
+            z-index: 1;
+            grid-template-areas: "first second third fourth .";
+            gap: 5px;
+        }
+        
+        #tab-wrapper>a {
+            text-align: center;
+            z-index: 1;
+            padding-top: .32rem;
+            color: #5e5e5e;
+            font-family: Ms Ui Gothic;
+            font-size: 1rem;
+            line-height: 1.188rem;
+            border: 0;
+            text-decoration: none;
+        }
+        
+        table {
+            background-color: white;
+            border: #5e5e5e 1px;
+        }
+        
+        td,
+        th {
+            border: 1px;
+            border-color: #5e5e5e;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big_div">
+        <img src="/assets/deco/windchime1.gif" class="sticker" style="top: 0; right:0; position: absolute;" onclick="sfxWindchime()" onmouseover="sfxWindchime">
+        <script>
+            function sfxWindchime() {
+                var sfx = new Audio("https://files.catbox.moe/3rzc9r.mp3");
+                sfx.sfxWindchime();
+            }
+        </script>
+        <div id="laced_in">
+            <header>
+                <img src="/assets/deco/bandagepatches.png" class="sticker" style="width: 15rem; position: relative; bottom: -4rem; left: -4rem; transform: rotate(20deg);">
+                <h1>LTI Tracker</h1>
+            </header>
+            <marquee id="news">Please listen carefully, as our menu options have changed. To schedule an interview, press 1 (one) To view future events, press 2 (two). To see an interview or shadow day's page, press the respective entry in the table. </marquee>
+            <div id="realcontent">
+                <breadcrumb-trail></breadcrumb-trail>
+                <div id="wrapper">
+                    <div id="tab-wrapper">
+                        <a style="background-color: rgba(255, 252, 93, 0.5);" class="tablinks" id="defaultOpen" onclick="openYear(event, 'yone')">
+                            101
+                        </a>
+                        <a style="background-color: rgba(255, 92, 220, 0.51);" class="tablinks" onclick="openYear(event, 'ytwo')">
+                            201
+                        </a>
+                        <a style="background-color: rgba(106, 255, 92, 0.51);" class="tablinks" onclick="openYear(event, 'ythree')">
+                            301
+                        </a>
+                        <a style="background-color: rgba(92, 252, 255, 0.51);" class="tablinks" onclick="openYear(event, 'yfour')">
+                            401
+                        </a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Business Name</th>
+                                <th>Contact Name</th>
+                                <th>Job Title/Description</th>
+                                <th>Email</th>
+                                <th>Phone number</th>
+                                <th>Date Contacted</th>
+                                <th>Follow-up</th>
+                                <th>Interview date</th>
+                                <th>Shadow Day</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="fospl_interview.html">FriendShop/Friends of The Seattle Public Library</a></td>
+                                <td><a href="fospl_interview.html">Nancy J. Clemens</a></td>
+                                <td><a href="fospl_interview.html">Sales Manager</a></td>
+                                <td><a href="fospl_interview.html">friendshop@friendsofspl.org/ friendshopper@gmail.com</a></td>
+                                <td><a href="fospl_interview.html">(206)733-9015</a></td>
+                                <td><a href="fospl_interview.html">0241022</a></td>
+                                <td><a href="fospl_interview.html">0241029</a></td>
+                                <td><a href="fospl_interview.html"><s>0241114</s><br>0241107 @ 11:15 am</a></td>
+                                <td>
+                                    <a href="fospl_interview.html"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="hhm_interview.html">Highline Heritage Museum</a></td>
+                                <td><a href="hhm_interview.html">Nancy McKay</a></td>
+                                <td><a href="hhm_interview.html">Director</a></td>
+                                <td><a href="hhm_interview.html">director@highlinemuseum.org</a></td>
+                                <td><a href="hhm_interview.html">(206)402-4019</a></td>
+                                <td><a href="hhm_interview.html">0241031</a></td>
+                                <td><a href="hhm_interview.html">0241119</a>
+                                </td>
+                                <td><a href="hhm_interview.html">0241105 @ 10:00 am</a></td>
+                                <td>
+                                    <a href="hhm_interview.html">↓</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="kcls_burien_interview.html">Burien library</a></td>
+                                <td><a href="kcls_burien_interview.html">Alexis Carter</a></td>
+                                <td><a href="kcls_burien_interview.html">Librarian</a></td>
+                                <td><a href="kcls_burien_interview.html">acarter@kcls.org</a></td>
+                                <td><a href="kcls_burien_interview.html">(206)243-8790</a></td>
+                                <td><a href="kcls_burien_interview.html">0241112</a></td>
+                                <td><a href="kcls_burien_interview.html">0241114
+                                    0241121
+                                </a></td>
+                                <td><a href="kcls_burien_interview.html"><s>0241121 @ 11:00am</s> 0241126 @ 2:00pm</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a href="hhm_shadowday.html">Heritage Museum</a></td>
+                                <td><a href="hhm_shadowday.html">Katherine Williams</a></td>
+                                <td><a href="hhm_shadowday.html">Volunteer/Archivist</a></td>
+                                <td><a href="hhm_shadowday.html">seahurstplantchick@gmail.com</a></td>
+                                <td></td>
+                                <td><a href="hhm_shadowday.html">0242220</a></td>
+                                <td><a href="hhm_shadowday.html">0241122<br>0241202</a></td>
+                                <td></td>
+                                <td><a href="hhm_shadowday.html">0241206 @ 10:30 am - 3:00 pm</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="kcls_collectionslibrarian_interview.html">King County Library System</a></td>
+                                <td><a href="kcls_collectionslibrarian_interview.html">Brenna Shanks</a></td>
+                                <td><a href="kcls_collectionslibrarian_interview.html">Collections Librarian</a></td>
+                                <td><a href="kcls_collectionslibrarian_interview.html">bshanks@kcls.org</a></td>
+                                <td><a href="kcls_collectionslibrarian_interview.html">(425)369-3331</a></td>
+                                <td><a href="kcls_collectionslibrarian_interview.html">0241203</a></td>
+                                <td><a href="kcls_collectionslibrarian_interview.html">0241209<br>0241216<br>0241219</a></td>
+                                <td><a href="kcls_collectionslibrarian_interview.html">0241217 @ 11:00 am</a></td>
+                                <td>
+                                    <a href="kcls_collectionslibrarian_interview.html"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="sam_interview.html">Seattle Art Museum (Libraries)</a></td>
+                                <td><a href="sam_interview.html">Connor Ong</a></td>
+                                <td><a href="sam_interview.html">Archivist, (acting) Librarian</a></td>
+                                <td><a href="sam_interview.html">libraries@seattleartmuseum.org/<br>ConnorO@seattleartmuseum.org</a></td>
+                                <td><a href="sam_interview.html">(206)654-3220 x221</a></td>
+                                <td><a href="sam_interview.html">0241203</a></td>
+                                <td><a href="sam_interview.html">0241204<br>0241209<br>241217<br>0250107</a></td>
+                                <td><a href="sam_interview.html"><s>0241210 @ 2:15 pm</s><br>0241217 @ 2:15 pm</a></td>
+                                <td>
+                                    <a href="sam_interview.html"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AJ Power Studio</td>
+                                <td>AJ Power</td>
+                                <td>Artist</td>
+                                <td>ajpowerstudio@gmail.com</td>
+                                <td></td>
+                                <td>0241203</td>
+                                <td>0241205</td>
+                                <td>n/a</td>
+                                <td>n/a</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Junko Yamamoto</td>
+                                <td>Artist</td>
+                                <td>junko@junkoyamamoto.com</td>
+                                <td></td>
+                                <td>0241203</td>
+                                <td></td>
+                                <td>n/a</td>
+                                <td>n/a</td>
+                            </tr>
+                            <tr>
+                                <td><a href="wingluke_interview.html">Wing Luke Museum</a></td>
+                                <td><a href="wingluke_interview.html">Steffi Morrison</a></td>
+                                <td><a href="wingluke_interview.html">Collections Manager</a></td>
+                                <td><a href="wingluke_interview.html">visit@wingluke.org/<br>smorrison@wingluke.org</a></td>
+                                <td><a href="wingluke_interview.html">(206)623-5124 x117</a></td>
+                                <td><a href="wingluke_interview.html">0241305</a></td>
+                                <td><a href="wingluke_interview.html">0241209<br>0241210<br>0251212<br>0250107</a></td>
+                                <td><a href="wingluke_interview.html">0241213 @ 11:00 am</a></td>
+                                <td>
+                                    <a href="wingluke_interview.html">0250205 @ 10:15 am - 2:00 pm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="sma_interview.html">Seattle Municiplal Archives</a></td>
+                                <td><a href="sma_interview.html">Jeanie Fisher</a></td>
+                                <td><a href="sma_interview.html">Interim City Archivist</a></td>
+                                <td><a href="sma_interview.html">archives@seattle.gov/ jean.fisher@seattle.gov</a></td>
+                                <td><a href="sma_interview.html">(206)684-8353</a></td>
+                                <td><a href="sma_interview.html">0250107</a></td>
+                                <td><a href="sma_interview.html">0250108<br>0250109<br>0250110<br>0250123</a></td>
+                                <td><a href="sma_interview.html">0250121 @ 11:00 am</a></td>
+                                <td><a href="sma_interview.html">"unable to accommodate"</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="kcma_interview.html">King County Archives</a></td>
+                                <td><a href="kcma_interview.html">Hannah Soukup</a></td>
+                                <td><a href="kcma_interview.html">Archivist/Archives Program Manager</a></td>
+                                <td><a href="kcma_interview.html">archives@kingcounty.gov/ hsoukup@kingcounty.gov</a></td>
+                                <td><a href="kcma_interview.html">(206)459-9047</a></td>
+                                <td><a href="kcma_interview.html">0250109</a></td>
+                                <td><a href="kcma_interview.html">0250210<br>0250211<br>0250213</a></td>
+                                <td><a href="kcma_interview.html"><s>0250218 @ 2:30 pm</s> 0250220 @ 1:00 pm</a></td>
+                                <td>
+                                    <a href="kcma_interview.html"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="frye_interview.html">Frye Art Museum</a></td>
+                                <td><a href="frye_interview.html">Alexis L. Silva</a></td>
+                                <td><a href="frye_interview.html">Curatorial Assistant</a></td>
+                                <td><a href="frye_interview.html">curatorial@fryemuseum.org/ ASilva@fryemuseum.org</a></td>
+                                <td><a href="frye_interview.html">(206)432-8224 x224</a></td>
+                                <td><a href="frye_interview.html">0250109</a></td>
+                                <td>
+                                    <a href="frye_interview.html">0250304<br>0250306</a>
+                                </td>
+                                <td><a href="frye_interview.html">0250116 @ 10:00 am</a></td>
+                                <td>
+                                    <a href="frye_interview.html">some time in spring??</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Henry Art Gallery</td>
+                                <td>Em Chan</td>
+                                <td>Curatorial Assistant</td>
+                                <td>curatorial@henryart.org</td>
+                                <td></td>
+                                <td>0250304</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>Henry Art Gallery</td>
+                                <td>???</td>
+                                <td>Info Desk</td>
+                                <td>info@henryart.org</td>
+                                <td></td>
+                                <td>0250304</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>University of Washington Special Collections</td>
+                                <td>Sandra Kroupa</td>
+                                <td>Book Arts and Rare Books Curator</td>
+                                <td>skroupa@uw.edu</td>
+                                <td></td>
+                                <td>0250304</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>University of Washington Special Collections</td>
+                                <td>Amy Pierce</td>
+                                <td>Processing and Monographic Receiving Specialist</td>
+                                <td>apx@uw.edu</td>
+                                <td></td>
+                                <td>0250304</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="meow" id="ytwo">
+                    Idk I'm not a <a href="https://omniscient-readers-viewpoint.fandom.com/wiki/The_Prophets">prophet</a> don't ask me.
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Business Name</th>
+                                <th>Contact Name</th>
+                                <th>Job Title/Description</th>
+                                <th>Email</th>
+                                <th>Phone number</th>
+                                <th>Date Contacted</th>
+                                <th>Follow-up</th>
+                                <th>Interview date</th>
+                                <th>Shadow Day</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="meow" id="ythree">
+                    Idk I'm not a <a href="https://omniscient-readers-viewpoint.fandom.com/wiki/The_Prophets">prophet</a> don't ask me. x2
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Business Name</th>
+                                <th>Contact Name</th>
+                                <th>Job Title/Description</th>
+                                <th>Email</th>
+                                <th>Phone number</th>
+                                <th>Date Contacted</th>
+                                <th>Follow-up</th>
+                                <th>Interview date</th>
+                                <th>Shadow Day</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="meow" id="yfour">
+                    Idk I'm not a <a href="https://omniscient-readers-viewpoint.fandom.com/wiki/The_Prophets">prophet</a> don't ask me. x3
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Business Name</th>
+                                <th>Contact Name</th>
+                                <th>Job Title/Description</th>
+                                <th>Email</th>
+                                <th>Phone number</th>
+                                <th>Date Contacted</th>
+                                <th>Follow-up</th>
+                                <th>Interview date</th>
+                                <th>Shadow Day</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                            <tr>
+                                <td style="color: transparent;">Lorem <br> orv</td>
+                                <td style="color: transparent;">ipsum</td>
+                                <td style="color: transparent;">dolor</td>
+                                <td style="color: transparent;">sit</td>
+                                <td style="color: transparent;">amet</td>
+                                <td style="color: transparent;">consectetur</td>
+                                <td style="color: transparent;">adipiscing</td>
+                                <td style="color: transparent;">elit</td>
+                                <td style="color: transparent;">Suspendisse</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <script>
+                    function openYear(evt, cityName) {
+                        var i, meow, tablinks;
+                        meow = document.getElementsByClassName("meow");
+                        for (i = 0; i < meow.length; i++) {
+                            meow[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+                </script>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

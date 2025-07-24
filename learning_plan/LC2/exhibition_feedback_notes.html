@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>LC2 Exhibition Feedback Notes</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="/learning_plan/portfolionavi.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        #meow {
+            min-height: 10rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 fill round;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big_div">
+        <img src="/assets/deco/windchime1.gif" class="sticker" style="top: 0; right:0; position: absolute;" onclick="sfxWindchime()" onmouseover="sfxWindchime">
+        <script>
+            function sfxWindchime() {
+                var sfx = new Audio("https://files.catbox.moe/3rzc9r.mp3");
+                sfx.sfxWindchime();
+            }
+        </script>
+        <div id="laced_in">
+            <header>
+                <img src="/assets/deco/bandagepatches.png" class="sticker" style="width: 15rem; position: relative; bottom: -4rem; left: -4rem; transform: rotate(20deg);">
+                <h1>Feedback Notes</h1>
+            </header>
+            <marquee id="news">yeowch</marquee>
+            <div id="realcontent">
+                <breadcrumb-trail></breadcrumb-trail>
+                <div class="ezbox" id="meow">
+                    <p>LP: very authentic -- update goals should be proud of getting more contacts and internship set up</p>
+                    <p>son has a bfa: dont be afraid of it could tell where picking up new things here and there has a lot going on showed how doing it just short of going up another lv LTI: exemplary: saw what you liked, figured out things you didn&#39;t
+                        like; self awareness</p>
+                    <p>lp: using it much more freq than the beginning of this year <em>how active is that engagement? how often</em> dont think that you didn&#39;t learn igh end of significant; competencies coming in reflection rather than where it should
+                        be in guiding project: exemplary evidance, buttt lti: is difficult, preserver, very deeply aligned with long term vision realistic self eval, be kinder to yourself</p>
+                    <p>lp: happy 2 see look at it more open up to interviewing, shadow day, brand new, ambition for learning coding is not easy, dont be to hard on yourself, updating is the main goal</p>
+                    <p>very authentic, <strong>how are you tracking?</strong> get negative self talk out of learning plan! be more earnestly kind w yourself lot of different things you got going on, new to juggling so many things, connection to the competencies
+                        developing--consider competencies at the beginning rather than end/in reflection have a goal around website after finish project lti is hard, not super excited in the beginning, big growth--figuring out what you like, what you
+                        dont like, what aligns with your values, excited to see what you can do at internship--what does it mean to archive a collection how can you be kinder to yourself in your own head? what you tell yourself matters, will be able to
+                        do more of things you love if kinder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

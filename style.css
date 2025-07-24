@@ -1,0 +1,233 @@
+@font-face {
+    font-family: creampuff;
+    src: url("/assets/fonts/HanyiSentyCreamPuff.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Ms YaHei;
+    src: url("/assets/fonts/MicrosoftYahei.otf") format("opentype");
+}
+
+@font-face {
+    font-family: chocodealer;
+    src: url('/assets/fonts/Chocodealer.otf') format("opentype");
+}
+
+@font-face {
+    font-family: chocolatetype;
+    src: url('/assets/fonts/Chocolatetype.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: mokomorikuro;
+    src: url('/assets/fonts/mikiyu-mokomori-kuro.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: mini_jpty;
+    src: url('/assets/fonts/mini-jpangtouyu.TTF') format(opentype);
+}
+
+@font-face {
+    font-family: fusionpixel;
+    src: url('/assets/fonts/fusion-pixel-12px-monospaced-zh_hant.otf');
+}
+
+@font-face {
+    font-family: ysbth;
+    src: url('/assets/fonts/ysbth.ttf');
+}
+
+@font-face {
+    font-family: knbobohei;
+    src: url('/assets/fonts/KNBobohei-Bold.ttf');
+}
+
+@font-face {
+    font-family: Ms Ui Gothic;
+    src: url('/assets/fonts/basiic.ttf') format(truetype);
+}
+
+body {
+    background: url('/assets/bgs/dither_it_sonny-mauricio-kIr8e-01eAw-unsplash-tiled.png');
+    font-family: Ms Ui Gothic;
+    color: #747474;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    cursor: url('/assets/scarameow_cursor.gif'), auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 3.5px;
+    margin: 0px;
+}
+
+ol {
+    margin: 1px;
+    padding-left: 1rem;
+}
+
+mark {
+    background-color: #e0f5ff;
+    color: #747474;
+}
+
+.yellow {
+    background-color: rgba(255, 252, 93, 0.5) !important;
+}
+
+.green {
+    background-color: rgba(106, 255, 92, 0.51) !important;
+}
+
+.red {
+    background-color: rgba(255, 92, 220, 0.51) !important;
+}
+
+.orange {
+    background-color: rgba(255, 135, 50, 0.51) !important;
+}
+
+p {
+    padding: 5px;
+}
+
+a {
+    color: #0000EE;
+}
+
+a:visited {
+    color: #0000EE;
+}
+
+a:hover {
+    color: #0000EE;
+}
+
+a:active {
+    color: #0000EE;
+}
+
+.decoheading {
+    width: 100%;
+    background: linear-gradient(0deg, #cbe2f8, #ffffff 60%);
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2.5px ridge #608dc4;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+breadcrumb-trail {
+    border-width: 0px 2px 2px 2px;
+    border-style: ridge;
+    border-color: #608dc4;
+    background: linear-gradient(0deg, #cbe2f8, #ffffff 60%);
+}
+
+breadcrumb-trail li {
+    border-width: 0px 0px 2px 0px;
+    border-style: ridge;
+    border-color: #608dc4;
+    background: linear-gradient(0deg, #cbe2f8, #ffffff 60%);
+    padding: 6px 1px;
+    margin: 0px;
+}
+
+breadcrumb-trail ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.breadcrumb-trail_sections {
+    font-weight: 600;
+    font-size: 120%;
+    padding: 10px 0px;
+}
+
+.sub_breadcrumb-trail_element {
+    margin-left: 1rem;
+    padding-left: 5px;
+    border-left: 2px solid rgb(0, 89, 255);
+}
+
+thead {
+    background: linear-gradient(0deg, #cbe2f8, #ffffff 60%);
+}
+
+thead>th {
+    background: linear-gradient(0deg, #cbe2f8, #ffffff 60%);
+}
+
+tbody {
+    text-align: left;
+    font-size: 0.75rem;
+    padding: 2px;
+}
+
+tbody>td {
+    text-align: left;
+    font-size: 0.75rem;
+    padding: 2px;
+}
+
+table {
+    font-weight: lighter;
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: #747474;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.exhibition {
+    animation: color-change 1s infinite;
+}
+
+
+/*button marquee*/
+
+.button-marquee {
+    position: relative;
+    max-width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    /* the more objects the faster it scrolls -> add to time to make it slower */
+    animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.track:hover {
+    animation-play-state: paused;
+}
+
+
+/*button marquee end*/
+
+.sticker {
+    z-index: 5;
+    pointer-events: none;
+}

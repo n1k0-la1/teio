@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Project Directory</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="/learning_plan/portfolionavi.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        #meow {
+            min-height: 10rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+        }
+        
+        .project_card {
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 round;
+            width: 80%;
+            min-height: 20rem;
+            margin: 16px auto;
+            padding: 3.5px;
+            background-image: url(/assets/bgs/AR1J1R7.png);
+        }
+        
+        mark {
+            background-color: #e0f5ff;
+            color: #5e5e5e;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: #5e5e5e
+        }
+        
+        .sepreration {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            gap: 10px;
+        }
+        
+        .project_discript {
+            border-color: #cdcdcd;
+            border-width: 2px;
+            border-style: solid;
+            margin: 5px;
+            height: 15rem;
+            text-align: justify;
+            overflow: auto;
+            background-color: white;
+        }
+        
+        .project_links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project_links a {
+            background-color: hsl(199, 100%, 94%, 60%);
+            margin: 10px auto;
+        }
+        
+        .project_footer {
+            color: gainsboro;
+            text-align: left;
+            font-size: .8rem;
+            margin: 3.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big_div">
+        <img src="/assets/deco/windchime1.gif" class="sticker" style="top: 0; right:0; position: absolute;" onclick="sfxWindchime()" onmouseover="sfxWindchime">
+        <script>
+            function sfxWindchime() {
+                var sfx = new Audio("https://files.catbox.moe/3rzc9r.mp3");
+                sfx.sfxWindchime();
+            }
+        </script>
+        <div id="laced_in">
+            <header>
+                <img src="/assets/deco/bandagepatches.png" class="sticker" style="width: 15rem; position: relative; bottom: -4rem; left: -4rem; transform: rotate(20deg);">
+                <h1>Project Directory</h1>
+            </header>
+            <marquee id="news">Do these even count as projects? Actually. Don't answer that.</marquee>
+            <div id="realcontent">
+                <breadcrumb-trail></breadcrumb-trail>
+                <div id="meow">
+                    <div class="project_card">
+                        <h3><mark><a href="/learning_plan/projects/conceptdesgn_proposal.html">Concept Desgn Sketchbook.｡.:*☆</a></mark></h3>
+                        <div class="sepreration">
+                            <div class="project_discript">
+                                <p>
+                                    Extention? Continuation? Child? Of my never-ending endevor to get good at art. (following is copied from proposal introduction) I feel like I take forever forever to draw, and it sucks because that means I make less drawings (duh) which means I get good
+                                    slower which is BAD! I also want to develop my guys more, because… oh em gee… I look at other people's and I'm like… WAAAOWIE!!! so cool! so fleshed! this person has done lots of ruminating and reflection about their
+                                    guys! I want to be like that! So basically this project is me attempting to work on both of those problems; forcing me to fail quickly/draw quicker and more to fill up the skechbook in time, and also have a vector to
+                                    constantly think out my ideas. I have a lot of stuff bouncing around in my brain and this would be a nice place to put them
+                                </p>
+                            </div>
+                            <div class="project_links">
+                                <a href="conceptdesgn_proposal.html">Proposal</a>
+                                <a href="conceptdesgn_annotatedbib.html">Bibliography</a>
+                                <a href="conceptdesgn_reflection.html">Reflection</a>
+                            </div>
+                        </div>
+                        <div class="project_footer">#pq #comms | #bloom</div>
+                    </div>
+                    <div class="project_card">
+                        <h3><mark><a href="/projectfolder/projectname.html"><s>Stop sucking at art</s>.｡.:*☆</a></mark></h3>
+                        <div class="sepreration">
+                            <div class="project_discript">
+                                <p><mark>Turned into ↑ 'Concept Design Sketchbook' Project as seen above, and the <a href="/learning_plan/goals/boxes.html">draw boxes goal</a></mark></p>
+                                <p> Do art studies. Draw more.Fill up a standard sized sketchbook within 3 months. Blah blah blah. I hate drawing the most but I hate not drawing more. That one Defunctland quote. <img src="/learning_plan/projects/images/ihatefilmaking.jpg"
+                                        style="display: block; width:90%; margin-left: auto; margin-right: auto;"> now, if you look at my handy chart: <img src="/learning_plan/projects/images/improvementinpaintinggraph.png" style="display: block; width:90%;">                                    feel like my observation skills are <i>slightly</i> higher than my actual art skills; Because looking at my art I know it sucks, but I can't put a finger on <i>why</i> it sucks or how to fix it. The only way to fix
+                                    this is time and repitition, I guess... o(一︿一;)o
+                                </p>
+                            </div>
+                            <div class="project_links">
+                                <a href="/learning_plan/goals/boxes/">Boxes Goal</a>
+                            </div>
+                        </div>
+                        <div class="project_footer">#pq #comms | #bud</div>
+                    </div>
+                    <div class="project_card">
+                        <h3><mark><a href="/projectfolder/projectname.html"><s>Become fluent (reading & writing) in Chinese</s>.｡.:*☆</a></mark></h3>
+                        <div class="sepreration">
+                            <div class="project_discript">
+                                <p><mark>Turned into more of a goal, <a href="/learning_plan/goals/cn.html">look here.</a></mark></p>
+                                <p> I really want to read LOTM in chinese. Because it's cheaper. That's pretty much it. Right now, I'm passable in speaking Cantonese (I think...), but I am illiterate, which is quite literally humiliating, lol. I'd also like
+                                    to be able to complete the 'World Language by Profficiency test' (exam?) and get at least two credits from it; Although I dunno if I want to take the test in Mandrin or Cantonese. Probably the latter..?</p>
+                                <p>To work towards this goal, I'm going to Mandarin Chinese classes every week, and self-studying Cantonese on the side. Luckily the classes I'm taking are taught by Taiwanese people, so it's all in traditional (╯_╰ ) That
+                                    makes the self-study easier, at least.</p>
+                            </div>
+                            <div class="project_links">
+                                <a href="/learning_plan/goals/cn.html">Goals Page</a>
+                            </div>
+                        </div>
+                        <div class="project_footer">#comms | #bloom</div>
+                    </div>
+                    <div class="project_card">
+                        <h3><mark><a href="/learning_plan/projects/teio_proposal.html"><s>The earth is ONLINE! pt. 1.｡.:*☆</s></a></mark></h3>
+                        <div class="sepreration">
+                            <div class="project_discript">
+                                <p><mark>COMPLETE!</mark></p>
+                                <p>Complete 'phase 1' of the website, aka all the pages I have planned out and created links for in the navbar as of writing this, 0241002, by the half-way point of the next learning cycle. -So like in three months. </p>
+                                <img src="/learning_plan/projects/images/indexnav_as_of_0241002.png" style="display: block; height:20rem; margin-left: auto; margin-right: auto;">
+                                <p> Do the learning plan part and the <a href="/index.html">main</a> part count as different websites.. Whichever seems more impressive. Learn JQuery & Javascript so I can add cute new things. Name is a reference to the webnovel
+                                    <a href="https://www.novelupdates.com/series/the-earth-is-online/">TEIO</a> 〒▽〒
+                                </p>
+                            </div>
+                            <div class="project_links">
+                                <a href="teio_proposal.html">Proposal</a>
+                                <a href="teio_annotatedbib.html">Bibliography</a>
+                                <a href="teio_reflection.html">Reflection</a>
+                            </div>
+                        </div>
+                        <div class="project_footer">#er #comms | #dried</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
