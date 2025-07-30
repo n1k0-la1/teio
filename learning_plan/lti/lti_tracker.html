@@ -982,24 +982,6 @@
                         </tbody>
                     </table>
                 </div>
-                <script>
-                    function openYear(evt, cityName) {
-                        var i, meow, tablinks;
-                        meow = document.getElementsByClassName("meow");
-                        for (i = 0; i < meow.length; i++) {
-                            meow[i].style.display = "none";
-                        }
-                        tablinks = document.getElementsByClassName("tablinks");
-                        for (i = 0; i < tablinks.length; i++) {
-                            tablinks[i].className = tablinks[i].className.replace(" active", "");
-                        }
-                        document.getElementById(cityName).style.display = "block";
-                        evt.currentTarget.className += " active";
-                    }
-
-                    // Get the element with id="defaultOpen" and click on it
-                    document.getElementById("defaultOpen").click();
-                </script>
             </div>
         </div>
         <img style="position: fixed; bottom: 0px; left: 0px; height: 25%; z-index: 3;" src="/learning_plan/wandere_chibi_studying-pixeled.png" />
