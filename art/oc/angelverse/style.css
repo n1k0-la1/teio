@@ -5,44 +5,35 @@ body {
 #news {
     color: red;
     background-color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     border-bottom: 1px ridge gray;
     box-shadow: -1px 20px 38px -30px rgba(0, 0, 0, 0.26);
     -webkit-box-shadow: -1px 20px 38px -30px rgba(0, 0, 0, 0.26);
     -moz-box-shadow: -1px 20px 38px -30px rgba(0, 0, 0, 0.26);
+    margin: -.5rem -.5rem 1rem -.5rem !important;
+    width: 103%;
+    padding: 0;
 }
 
-#message1 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 20rem;
-    width: 50%;
+#window {
     background-color: white;
-    box-shadow: 1px 20px 38px 0px rgba(0, 0, 0, 0.26);
-    -webkit-box-shadow: 1px 20px 38px 0px rgba(0, 0, 0, 0.26);
-    -moz-box-shadow: 1px 20px 38px 0px rgba(0, 0, 0, 0.26);
+    min-height: 30rem;
+    color: #747474;
+    margin: 1rem 1rem 0rem 1rem;
+    box-shadow: 10px 10px 21px 2px rgba(0, 0, 0, 0.259);
+    -webkit-box-shadow: 10px 10px 21px 2px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 10px 10px 21px 2px rgba(0, 0, 0, 0.26);
+    border: 2.5px ridge #608dc4;
 }
 
-#msg1body {
-    text-align: center;
-    font-size: x-large;
-    padding: 10px;
-}
-
-.whead {
-    padding: 5px;
-    display: flex;
-}
-
-.wtitle {
+#window>.decoheading {
     text-align: left;
 }
 
-.wicon {
-    text-align: right;
+#content {
+    padding: 5px;
+}
+
+.addendum {
+    font-size: .7rem;
+    color: #b4b4b4;
 }
