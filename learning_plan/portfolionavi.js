@@ -15,7 +15,6 @@ class BreadcrumbTrail extends HTMLElement {
                     <li><a href="/learning_plan/vision.html"> Vision</a></li>
                     <li><a href="/learning_plan/goals/index.html"> Goals</a></li>
                     <li><a href="/learning_plan/projects/index.html"> Projects</a></li>
-                    <li><a href="/learning_plan/lti/index.html"> LTI Tracker</a></li>
             </ul>
             <img src="/assets/deco/IMG_6243.png" style="display: block; width: 95%; margin-left: auto; margin-right: auto; margin-top: 5px;" alt="born to work world is a corporation">
             <a href="https://file.garden/Ze6P3FucmRDZDfxQ/Omniscient%20Reader's%20Viewpoint%20-%20Sing-shong%20(singsyong).epub"><img src="/assets/deco/orvpropaganda_pixeled.jpg" style="display: block; width: 95%; margin-left: auto; margin-right: auto; margin-top: 10px;"></a>
