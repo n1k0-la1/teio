@@ -48,6 +48,11 @@
     src: url('/assets/fonts/basiic.ttf') format(truetype);
 }
 
+@font-face {
+    font-family: zpix;
+    src: url('/assets/fonts/zpix.ttf') format(truetype);
+}
+
 body {
     background: url('/assets/bgs/dither_it_sonny-mauricio-kIr8e-01eAw-unsplash-tiled.png');
     font-family: Ms Ui Gothic;
