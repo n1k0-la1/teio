@@ -11,7 +11,6 @@ class BreadcrumbTrail extends HTMLElement {
                     <li>
                         <span class="breadcrumb-trail_sections"><b> Learning Plan:</b>───╮</span>
                     </li>
-                    <li><a href="/learning_plan/index.html"> Sitemap</a></li>
                     <li><a href="/learning_plan/vision.html"> Vision</a></li>
                     <li><a href="/learning_plan/goals/index.html"> Goals</a></li>
                     <li><a href="/learning_plan/projects/index.html"> Projects</a></li>
