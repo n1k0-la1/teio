@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Reading List</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " :3 ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        body {
+            background-image: url(assets/bgs/stripe_bow.jpg);
+            color: #8b8b8b;
+        }
+        
+        #cont {
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(assets/bgs/66_lighterblue.png) 7 fill round;
+            width: 60%;
+            height: 40rem;
+            margin: 1.5rem 1.5rem 1.5rem 8rem;
+            padding: 10px 2rem;
+            list-style-image: url(assets/ball_s_06.gif);
+            line-height: 1.4rem;
+        }
+        
+        #cont>ul {
+            padding-left: 2rem;
+        }
+        
+        #cont>h1 {
+            font-size: 500;
+        }
+        
+        #shouldputthisinstylecsstbh {
+            border-left: 0.2rem solid #8b8b8b;
+            margin: 5px 5px 0px auto;
+            padding: 0px 0px 0px -2rem;
+            background: hsl(199, 100%, 94%, 60%);
+            color: #8b8b8b;
+            text-align-last: left;
+        }
+        
+        #pagedoll_chair {
+            z-index: 2;
+            width: 40%;
+            right: -5rem;
+            bottom: -2rem;
+            position: fixed;
+        }
+        
+        #pagedoll_doll {
+            z-index: 3;
+            position: fixed;
+            right: 7rem;
+            bottom: 8rem;
+            height: 12rem;
+            cursor: grab;
+        }
+        
+        .seperation {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .right {
+            text-align: left;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div class="seperation">
+            <div class="left">
+                <span id="shouldputthisinstylecsstbh"><i> Reading...</i></span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>I Became a God in a Horror Game</td>
+                            <td>ch 230</td>
+                        </tr>
+                        <tr>
+                            <td>Got Stuck in a Horror Story, Still Gotta Work!</td>
+                            <td>ch 250</td>
+                        </tr>
+                        <tr>
+                            <td>How to Get on the Main Character’s Flower Path</td>
+                            <td>ch 22</td>
+                        </tr>
+                        <tr>
+                            <td>The Sound and The Fury</td>
+                        </tr>
+                        <tr>
+                            <td>Absalom, Absalom</td>
+                        </tr>
+                        <tr>
+                            <td>Eighteen's Bed</td>
+                            <td>ch 31</td>
+                        </tr>
+                        <tr>
+                            <td>Children of The Holy Emperor</td>
+                            <td>ch 3</td>
+                        </tr>
+                        <tr>
+                            <td>The Idiot</td>
+                            <td>ch 2</td>
+                        </tr>
+                        <tr>
+                            <td>Matriarchal Marrige</td>
+                            <td>ch 5</td>
+                        </tr>
+                        <tr>
+                            <td>Reader #2 Just Wants to be a Fan Girl</td>
+                            <td>ch 23</td>
+                        </tr>
+                        <tr>
+                            <td>Manager Kim Hates Idols</td>
+                            <td>ch 30</td>
+                        </tr>
+                        <tr>
+                            <td>If You Don’t Become the Main Character, You’ll Die</td>
+                            <td>ch 236</td>
+                        </tr>
+                        <tr>
+                            <td>Circle of Ineveitability</td>
+                            <td>ch 26</td>
+                        </tr>
+                        <tr>
+                            <td>Magical Girl Incident</td>
+                            <td>vol 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right">
+                <span id="shouldputthisinstylecsstbh"><i> Finished</i></span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Omnicient Reader's Viewpoint</td>
+                            <td>⭐⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>The Earth is Online</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Lord of The Mysteries</td>
+                        </tr>
+                        <tr>
+                            <td>Scum Villian's Self Saving System</td>
+                        </tr>
+                        <tr>
+                            <td>I Failed to Oust the Villain!</td>
+                        </tr>
+                        <tr>
+                            <td>Schoolgirl</td>
+                        </tr>
+                        <tr>
+                            <td>Again</td>
+                        </tr>
+                        <tr>
+                            <td>Don’t get in the way of Shun’s romance</td>
+                        </tr>
+                        <tr>
+                            <td>Roses and Champane</td>
+                        </tr>
+                        <tr>
+                            <td>The Wolf Lord's Lady</td>
+                        </tr>
+                        <tr>
+                            <td>Zero Day Attack</td>
+                        </tr>
+                        <tr>
+                            <td>Who Made me a Princess</td>
+                        </tr>
+                        <tr>
+                            <td>Dungeon Meshi</td>
+                        </tr>
+                        <tr>
+                            <td>The Seven Husbands of Evelyn Hugo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="left">
+                <span id="shouldputthisinstylecsstbh"><i> To Be Read</i></span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>War and Peace</td>
+                        </tr>
+                        <tr>
+                            <td>Ashtarte</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right">
+                <span id="shouldputthisinstylecsstbh"><i> Dropped</i></span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>The return of the 8th class magician</td>
+                        </tr>
+                        <tr>
+                            <td>Trapped in a Webnovel as a Good-For-Nothing</td>
+                        </tr>
+                        <tr>
+                            <td>Solo Farming In The Tower</td>
+                        </tr>
+                        <tr>
+                            <td>My Ray of Hope</td>
+                        </tr>
+                        <tr>
+                            <td>Lady Baby Runs A Romance Fantasy With Cash</td>
+                        </tr>
+                        <tr>
+                            <td>The Author's POV</td>
+                        </tr>
+                        <tr>
+                            <td>Empress Cesia wears knickerbockers</td>
+                        </tr>
+                        <tr>
+                            <td>SSS-class revival hunter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <img src="assets/deco/twst_floydtsum-ezgif.com-speed.webp" id="pagedoll_doll">
+    <img src="assets/deco/squidchair.png" id="pagedoll_chair">
+</body>
+
+</html>
