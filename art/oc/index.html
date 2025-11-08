@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Navigaion</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="mainnavi.js" defer></script>
+    <script src="headertyping.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        #maincont {
+            width: fit-content;
+            margin: 10rem auto;
+            border-width: 2px 2px 2px 2px;
+            border-style: ridge;
+            border-color: #608dc4;
+            background-color: #ffffff;
+        }
+        
+        .separation {
+            display: grid;
+            grid-template-columns: 20rem 20rem 20rem;
+            gap: 1rem;
+            padding: 10px;
+        }
+        
+        .marble {
+            text-align: center;
+        }
+        
+        .marble img {
+            width: 19rem;
+            height: 19rem;
+        }
+    </style>
+</head>
+<div id="maincont">
+    <div class="decoheading">Hello~ What world would you like to travel to today?</div>
+    <div class="separation">
+        <div class="marble">
+            <a href="angelverse/index.html">
+                <img src="/assets/deco/globe_deco.png"> Angelverse
+            </a>
+        </div>
+        <div class="marble">
+            <a href="mobverse/index.html">
+                <img src="/assets/deco/globe_tri.png"> Mobverse
+            </a>
+        </div>
+        <div class="marble">
+            <a href="">
+                <img src="/assets/deco/globe_triline.png"> Xianxiaverse
+            </a>
+        </div>
+    </div>
+</div>
+
+</html>
