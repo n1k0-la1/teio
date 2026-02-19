@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>RPGMaker AHP - Project Proposal</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="/learning_plan/portfolionavi.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        #meow {
+            min-height: 10rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 fill round;
+        }
+        
+        #meow>ul>li {
+            list-style-image: url("/assets/ball_s_06.gif");
+            margin-left: 2rem;
+        }
+        
+        th,
+        td {
+            border: 1px ridge #7c7870;
+        }
+        
+        table {
+            padding: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30rem;
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: lighter;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big_div">
+        <img src="/assets/deco/windchime1.gif" class="sticker" style="top: 0; right:0; position: absolute;" onclick="sfxWindchime()" onmouseover="sfxWindchime">
+        <script>
+            function sfxWindchime() {
+                var sfx = new Audio("https://files.catbox.moe/3rzc9r.mp3");
+                sfx.sfxWindchime();
+            }
+        </script>
+        <div id="laced_in">
+            <header>
+                <img src="/assets/deco/bandagepatches.png" class="sticker" style="width: 15rem; position: relative; bottom: -4rem; left: -4rem; transform: rotate(20deg);">
+                <h1></h1>
+            </header>
+            <marquee id="news">nyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</marquee>
+            <div id="realcontent">
+                <breadcrumb-trail></breadcrumb-trail>
+                <div class="ezbox" id="meow">
+                    <h3><u>I. Introduction ԅ(¯﹃¯ԅ)</u></h3>
+                    <ul>
+                        <li> What is the purpose of your project? What is the question or Idea you are exploring?</li>
+                        <li> What are your desired outcomes? What are you hoping to learn/produce?</li>
+                        <li> Why is this project interesting or relevant to you?</li>
+                    </ul>
+                    <p>I want to make an rpgmaker... Like I've said i would... for years... And since I've started commissions, like I've been wanting to, I should also do this as well. Yay.</p>
+                    <p>I want to be realistic about it all since it's my first game (which is the advice of everyone); So my desired outcome that i want to produce/my success criteria is: I want to have a finished, playable game. This means you can achieve
+                        at least one ending (if i make more it's exceeds expectations, ok? ^_^), and I want it to be up on itch.io. I want to have parallax maps for all 3 locations; 3 cgs; and sprite sheets + expression busts for both main characters.</p>
+                    <p>Things I'd also like to include, but am unsure if they're feasible, are: 'cleaning up' drag and drop minigame?</p>
+                    <h3><u>II. Organization (*^-^*)</u></h3>
+                    <ul>
+                        <li> What are the different phases of the project, and when do you want to finish them?</li>
+                        <li> What are your first steps/tasks?</li>
+                        <li> How will you keep track of your progress?</li>
+                    </ul>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="tableheadcont">Phase</th>
+                                <th class="tableheadcont">Start Date</th>
+                                <th class="tableheadcont">Specific Next Actions</th>
+                                <th class="tableheadcont">Due Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tablecont">Writing</td>
+                                <td class="tablecont"></td>
+                                <td class="tablecont">
+                                    <ol>
+                                        <li><a href="https://app.milanote.com/1VHf3t13Jo9pc9?p=R78ABXJVokE" target="_blank">Outline</a></li>
+                                        <li><a href="https://highlineschools-my.sharepoint.com/:w:/g/personal/4035806_stu_highlineschools_org/IQDoc-76mhfKQaFmZ9NUTtZZAUBf_WpfUnouhb8jeZRkNgc?e=cfR6Aw" target="_blank">Script</a></li>
+                                    </ol>
+                                </td>
+                                <td class="tablecont"></td>
+                            </tr>
+                            <tr>
+                                <td class="tablecont">BGs</td>
+                                <td class="tablecont"></td>
+                                <td class="tablecont">
+                                    <ol>
+                                        <li>Office (working draft)</li>
+                                        <li>Road/Suburb (photobashing)</li>
+                                        <li>Apartment (not started)</li>
+                                </td>
+                                <td class="tablecont"></td>
+                            </tr>
+                            <tr>
+                                <td class="tablecont">Characters</td>
+                                <td class="tablecont"></td>
+                                <td class="tablecont">
+                                    <ol>
+                                        <li><u>[PC]</u><br> Busts (started/working draft) <br>Sprite (not started)</li>
+                                        <li><u>Unnamed</u><br> Busts (not started) <br>Sprite (working draft)</li>
+                                </td>
+                                <td class="tablecont"></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tablecont">CGs (not started)</td>
+                                <td class="tablecont"></td>
+                                <td class="tablecont">
+                                    <ol>
+                                        <li>Unnamed hanging</li>
+                                        <li>Restringing</li>
+                                        <li>Ending cgs.. idk..</li>
+                                </td>
+                                <td class="tablecont"></td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3><u>III. Research ::>-<::</u></h3>
+                    <ul>
+                        <li> What information do you need in order to complete this project?</li>
+                        <li> What are some sources where you can get this information? (Remember, expert interviews count as sources!)</li>
+                    </ul>
+                    <p>what rpgmaker plugins to use... what size etc. the images need to be, etc.</p>
+                    <p>I will go through the files of other games in the 'genre' i'm making (Dead Plate, Flesh Blood and Concrete, Married in Red, Saihate Station) because all the files in rpgmakers you can just. look at. unobfuscated. and use those as refs.
+                        I will also use yt videos, etc. for more general rpgmaker research. </p>
+                    <h3><u>IV. Plan for Reflection (°ロ°)</u></h3>
+                    <ul>
+                        <li> How will you record your progress and colect evidence of your learning?</li>
+                        <li> How will you get feedback on your project along the way?</li>
+                    </ul>
+                    <p>post on socmeds as a devlog</p>
+                    <h3><u>V. Plan for Assesment （；´д｀）ゞ</u></h3>
+                    <ul>
+                        <li> How will you determine if your final project is "good"?</li>
+                    </ul>
+                    <p>If I fulfill the the end goal as stated in part 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

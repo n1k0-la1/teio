@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> AHP - Annotated Bibliography</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="/learning_plan/portfolionavi.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        #meow {
+            min-height: 10rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 fill round;
+        }
+        
+        details {
+            margin-bottom: 1.5rem;
+        }
+        
+        details li {
+            list-style-type: disc;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big_div">
+        <img src="/assets/deco/windchime1.gif" class="sticker" style="top: 0; right:0; position: absolute;" onclick="sfxWindchime()" onmouseover="sfxWindchime">
+        <script>
+            function sfxWindchime() {
+                var sfx = new Audio("https://files.catbox.moe/3rzc9r.mp3");
+                sfx.sfxWindchime();
+            }
+        </script>
+        <div id="laced_in">
+            <header>
+                <img src="/assets/deco/bandagepatches.png" class="sticker" style="width: 15rem; position: relative; bottom: -4rem; left: -4rem; transform: rotate(20deg);">
+                <h1>AHP Bibliography</h1>
+            </header>
+            <marquee id="news">guys you should play Flesh Blood and Concrete :-)
+            </marquee>
+            <div id="realcontent">
+                <breadcrumb-trail></breadcrumb-trail>
+                <div class="ezbox" id="meow">
+                    <h3><u>Annotated Bibliography… ￣へ￣</u></h3>
+                    <details open>
+                        <summary>♥LET'S MAKE A DATING SIM!♥ - Full series (RPG Maker MV),<i> Echo607</i></summary>
+                        Basic mechanics of a VN: skip, title, log, save, call menu while in text box; gain points through choices you make in game
+                    </details>
+                    <details open>
+                        <summary>What You NEED to Make a Visual Novel in RPGMaker!, <i>Rainy Tei Productions</i></summary>
+                        <u>Plugins listed</u>
+                        <ul>
+                            <li>
+                                <a href="https://forums.rpgmakerweb.com/index.php%3Fthreads/hide-and-skip-plugin.124757/" target="_blank">Hide & Skip</a>
+                            </li>
+                            <li>
+                                <a href="https://forums.rpgmakerweb.com/threads/call-menu-during-messages.101958/" target="_blank">Call Menu During Msgs</a>
+                            </li>
+                            <li>
+                                <a href="https://forums.rpgmakerweb.com/threads/non-combat-menu.56344/" target="_blank">Simple Non-Combat Menu</a>
+                            </li>
+                            <li>
+                                <a href="https://www.yanfly.moe/wiki/Message_Core_(YEP)" target="_blank">Yanfly Message Core</a>
+                            </li>
+                            <li>
+                                <a href="https://www.yanfly.moe/wiki/Message_Backlog_(YEP)" target="_blank">Yanfly Message Backlog</a>
+                            </li>
+                            <li>
+                                <a href="https://mogplugins.com/rpg-maker-mv/" target="_blank">Moghunter Bust image plugin</a> ended up using <a href="https://galvs-scripts.com/2020/09/22/mz-message-busts/" target="_blank">Galv's</a>
+                            </li>
+                    </details>
+                    <details open>
+                        <summary>How To Write Visual Novels, <i>Visual Novel Design</i></summary>
+                        write out 'main route'/story first, and then create off shoots; write everything and then cut down based on budget (in my case time constraint)
+                    </details>
+                    <details open>
+                        <summary>Yurucamp (creator of FB&C) Asks
+                        </summary>
+                        <u>Anon:</u> ... I was wondering what plugins did you use for FB&C ...
+                        <br>
+                        <u>A:</u> <img src="https://64.media.tumblr.com/f0a6dc6f9d09e66cbdba7c5b589ab1b2/f9e214345e5b2bd5-43/s1280x1920/61bfa5002c42a3cb0aa5b142e19cc56ee01dde9f.pnj" style="display: block; width: 90%;"> thank you so much! here are all
+                        of the plugins i used! <br>yes, it's parallax mapping with the yanfly doodads plugin for decorations and interactive objects (cabinets, doors) as events! i understand completely what you're asking, let me know if you need any more
+                        elaboration, i'm always happy to try to help and i wish you the best with your project!!!!
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

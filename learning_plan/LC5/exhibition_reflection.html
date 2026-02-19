@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>LC5 Exhibition Reflection</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/mainfavi.webp" />
+    <script>
+        var documentTitle = document.title + " ! ";
+
+        (function titleMarquee() {
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+            setTimeout(titleMarquee, 200);
+        })();
+    </script>
+    <script src="/learning_plan/portfolionavi.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/framework.css">
+    <style>
+        #meow {
+            min-height: 10rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border-width: 9px;
+            border-style: solid;
+            border-image: url(/assets/bgs/border_lace_grey.png) 7 fill round;
+        }
+        
+        #meow ul>li {
+            list-style-image: url("/assets/ball_s_06.gif");
+            margin-left: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big_div">
+        <img src="/assets/deco/windchime1.gif" class="sticker" style="top: 0; right:0; position: absolute;" onclick="sfxWindchime()" onmouseover="sfxWindchime">
+        <script>
+            function sfxWindchime() {
+                var sfx = new Audio("https://files.catbox.moe/3rzc9r.mp3");
+                sfx.sfxWindchime();
+            }
+        </script>
+        <div id="laced_in">
+            <header>
+                <img src="/assets/deco/bandagepatches.png" class="sticker" style="width: 15rem; position: relative; bottom: -4rem; left: -4rem; transform: rotate(20deg);">
+                <h1>LC5 Exhibition Reflection</h1>
+            </header>
+            <marquee id="news">I gotta stop signing up for art events man i have 6 illustrations due tommorrow!!</marquee>
+            <div id="realcontent">
+                <breadcrumb-trail></breadcrumb-trail>
+                <div class="ezbox" id="meow">
+                    <p>Please respond to the following in a complete paragraph per question. This reflection gives you the chance to think DEEPLY about where you are in relation to achieving your goals, as well as what SPECIFIC actions you must take to ensure
+                        a successful and productive rest of the year.
+                    </p>
+                    <ul>
+                        <li> <b><u>Describe your exhibition:</u></b> How did you feel? Do you feel like you were prepared? Do you feel like you presented well?<br>
+                            <p>
+
+                        </li>
+                        <li> <b><u>What were your successes during this learning cycle?</u></b> Do you feel like you did a good job presenting them? Do you feel like you oversold or undersold your successes at all?<br>
+                            <p>
+
+                            </p>
+                        </li>
+                        <li> <b><u>What were your struggles during this learning cycle?</u></b> Do you feel you were honest and constructively focused when you presented your struggles?<br>
+                            <p>
+
+                            </p>
+                        </li>
+                        <li> <b><u>What was some of the SPECIFIC feedback you received at your exhibition?</u></b><br>
+                            <p>
+
+                            </p>
+                        </li>
+                        <li> <b><u>What are some SPECIFIC new goals you will set for the next learning cycle?</u></b><br>
+                            <p>
+
+                            </p>
+                        </li>
+                        <li> <b><u>What do you need/want/require help with?</u></b> Who can you ask for this help? What kind of help? BE SPECIFIC<br>
+                            <p>
+
+                            </p>
+                        </li>
+                        <li> <b><u>What did you learn from being a panelist at other exhibitions?</u></b><br>
+                            <p>
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
