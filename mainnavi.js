@@ -10,12 +10,12 @@ class BreadcrumbTrail extends HTMLElement {
                     </li>
                     <li><a href="abtme.html">About Me</a>
                         <span style="font-size: 75%; color: crimson"><i>up!</i></span></li>
-                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="sitemap.html"><s>Sitemap</s></a></li>
                     <li><a href="credits.html">Credits</a>
                     <li>
                         <span class="breadcrumb-trail_sections"><b>Blogs:</b>──────╮</span>
                     </li>
-                    <li><a href="/art/index.html">Art Blog</a>
+                    <li><a href="/art/index.html">Art Gallery</a>
                         <span style="font-size: 75%; color: crimson"><i>up!</i></span></li>
                     <li>
                         <a href="blog.html">Diary</a>
